@@ -8,29 +8,21 @@
 
 <title>Highlights the sentiment of text. — highlight_sentiment • PFRTextMiner</title>
 
-
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
-
-<!-- bootstrap-toc -->
-<link rel="stylesheet" href="../bootstrap-toc.css">
-<script src="../bootstrap-toc.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
 
-<!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -38,14 +30,14 @@
 
 
 
-
 <meta property="og:title" content="Highlights the sentiment of text. — highlight_sentiment" />
+
 <meta property="og:description" content="Takes as input a dataframe from the mine_sentiment function with
 text and sentiment columns and outputs the highlighted sentences by
 by sentiment polarity as an html file. This function has been adapted
 from the highlight function from the sentimentr package by
 Tyler Rinker." />
-
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -59,10 +51,9 @@ Tyler Rinker." />
 <![endif]-->
 
 
-
   </head>
 
-  <body data-spy="scroll" data-target="#toc">
+  <body>
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -84,7 +75,7 @@ Tyler Rinker." />
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -101,13 +92,17 @@ Tyler Rinker." />
     <li>
       <a href="../articles/pfrtextminer.html">PFRTextMiner: Webscraping and Text Mining at Plant &amp; Food Research</a>
     </li>
+    <li>
+      <a href="../articles/pfrtextminer_GroupLeaderReports.html">PFRTextMiner case study: GL reports</a>
+    </li>
   </ul>
 </li>
       </ul>
+      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/PlantandFoodResearch/PFRTextMiner/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/PlantandFoodResearch/PFRTextMiner">
+    <span class="fa fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -118,7 +113,6 @@ Tyler Rinker." />
 </div><!--/.navbar -->
 
       
-
       </header>
 
 <div class="row">
@@ -130,20 +124,18 @@ Tyler Rinker." />
     </div>
 
     <div class="ref-description">
+    
     <p>Takes as input a dataframe from the <code>mine_sentiment</code> function with
 text and sentiment columns and outputs the highlighted sentences by
 by sentiment polarity as an html file. This function has been adapted
 from the <code>highlight</code> function from the <span class="pkg">sentimentr</span> package by
 Tyler Rinker.</p>
+    
     </div>
 
-    <pre class="usage"><span class='fu'>highlight_sentiment</span>(
-  <span class='no'>df</span>,
-  <span class='kw'>file</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/file.path.html'>file.path</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempdir</a></span>(), <span class='st'>"polarity.html"</span>),
-  <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>3</span>,
-  <span class='kw'>open</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>
-)</pre>
-
+    <pre class="usage"><span class='fu'>highlight_sentiment</span>(<span class='no'>df</span>, <span class='kw'>file</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/file.path'>file.path</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/tempfile'>tempdir</a></span>(), <span class='st'>"polarity.html"</span>),
+  <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>open</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -166,33 +158,45 @@ sentiment columns.</p></td>
 attempt to be opened.</p></td>
     </tr>
     </table>
-
+    
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>Creates an html document with the sentiment highlighting.</p>
+    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Generates an html document containing the polarity highlighting for
 each text where positive = green and negative = pink.</p>
+    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='mine_sentiment.html'>mine_sentiment</a></code></p></div>
+    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>text</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"I really love working at Plant and Food Research. It is great."</span>,
+    <pre class="examples"><div class='input'><span class='no'>text</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"I really love working at Plant and Food Research. It is great."</span>,
           <span class='st'>"Today I investigated methods in sentiment analysis."</span>,
-          <span class='st'>"The results were not very pleasing. ðŸ˜’"</span>,
-          <span class='st'>"Sentiment anaylsis is amazing! Especially for emojis. ðŸ’—ðŸ˜€"</span>)
-<span class='fu'><a href='mine_sentiment.html'>mine_sentiment</a></span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='no'>text</span>) <span class='kw'>%&gt;%</span> <span class='fu'>highlight_sentiment</span>()</div><div class='output co'>#&gt; <span class='error'>Error in mine_sentiment(text = text) %&gt;% highlight_sentiment(): could not find function "%&gt;%"</span></div><div class='input'><span class='fu'><a href='mine_sentiment.html'>mine_sentiment</a></span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='no'>text</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"sentence"</span>) <span class='kw'>%&gt;%</span> <span class='fu'>highlight_sentiment</span>()</div><div class='output co'>#&gt; <span class='error'>Error in mine_sentiment(text = text, by = "sentence") %&gt;% highlight_sentiment(): could not find function "%&gt;%"</span></div><div class='input'>
+          <span class='st'>"The results were not very pleasing. &lt;U+0001F612&gt;"</span>,
+          <span class='st'>"Sentiment anaylsis is amazing! Especially for emojis. &lt;U+0001F497&gt;&lt;U+0001F600&gt;"</span>)
+<span class='fu'><a href='mine_sentiment.html'>mine_sentiment</a></span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='no'>text</span>) <span class='kw'>%&gt;%</span> <span class='fu'>highlight_sentiment</span>()</div><div class='output co'>#&gt; <span class='message'>Saved in C:\Users\cflfcl\AppData\Local\Temp\Rtmp8kSilS/polarity.html</span></div><div class='output co'>#&gt; <span class='message'>Opening C:\Users\cflfcl\AppData\Local\Temp\Rtmp8kSilS/polarity.html ...</span></div><div class='input'><span class='fu'><a href='mine_sentiment.html'>mine_sentiment</a></span>(<span class='kw'>text</span> <span class='kw'>=</span> <span class='no'>text</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"sentence"</span>) <span class='kw'>%&gt;%</span> <span class='fu'>highlight_sentiment</span>()</div><div class='output co'>#&gt; <span class='message'>Saved in C:\Users\cflfcl\AppData\Local\Temp\Rtmp8kSilS/polarity.html</span></div><div class='output co'>#&gt; <span class='message'>Opening C:\Users\cflfcl\AppData\Local\Temp\Rtmp8kSilS/polarity.html ...</span></div><div class='input'>
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <nav id="toc" data-toggle="toc" class="sticky-top">
-      <h2 data-toc-skip>Contents</h2>
-    </nav>
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+
+      <li><a href="#details">Details</a></li>
+
+      <li><a href="#see-also">See also</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
   </div>
 </div>
-
 
       <footer>
       <div class="copyright">
@@ -200,16 +204,13 @@ each text where positive = green and negative = pink.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
 </div>
-
       </footer>
    </div>
 
   
 
-
   </body>
 </html>
-
 
